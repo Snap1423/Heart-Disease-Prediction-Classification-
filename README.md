@@ -1,3 +1,4 @@
+
 # Heart Disease Prediction (Classification)
 
 This project predicts whether a patient has heart disease based on medical features.
@@ -28,3 +29,4 @@ This project predicts whether a patient has heart disease based on medical featu
 
 * Try Random Forest / other models
 * Reduce false negatives (important in medical context)
+<img width="640" height="480" alt="Figure_1" src="https://github.com/user-attachments/assets/19c44041-7962-45ba-8951-976c6b951a8a" />
