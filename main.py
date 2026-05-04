@@ -7,6 +7,7 @@ from sklearn.metrics import precision_score, recall_score
 from sklearn.preprocessing import StandardScaler
 import matplotlib.pyplot as plt 
 import seaborn as sns
+from sklearn.ensemble import RandomForestClassifier
 
 # Load the data
 data = pd.read_csv("heart.csv")
@@ -83,6 +84,7 @@ cm = confusion_matrix(y_test,predictions)
 print(cm)
 
 # precision and Recall
+print("Improved Logistic Regression score")
 print("Accuracy: ", accuracy_score(y_test,predictions)) 
 print("Precision: ", precision_score(y_test, predictions))
 print("Recall: ", recall_score(y_test, predictions))
@@ -95,3 +97,16 @@ plt.xlabel("New Predicted")
 plt.ylabel("New Actual")
 plt.title("New Confusion Matrix")
 plt.show()
+
+# comparison for random forest classifier
+rf_model = RandomForestClassifier(random_state=42)
+rf_model.fit(X_train, y_train)
+
+# prediction
+rf_predictions = rf_model.predict(X_test)
+
+# evaluate
+print("Comparison model of RandomForestClassifer") 
+print("Accuracy: ", accuracy_score(y_test, rf_predictions))
+print("Precision: ", precision_score(y_test, rf_predictions))
+print("Recall: ", recall_score(y_test, rf_predictions))

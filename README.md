@@ -1,32 +1,25 @@
+# Heart Disease Prediction using Machine Learning
 
-# Heart Disease Prediction (Classification)
+This project predicts whether a patient has heart disease using medical features.
 
-This project predicts whether a patient has heart disease based on medical features.
+## Models Compared:
 
-## What I did:
+* Logistic Regression
+* Random Forest Classifier
 
-* Loaded and explored dataset
-* Prepared features and target variable
-* Split data into training and testing sets
-* Applied feature scaling
-* Trained Logistic Regression model
-* Evaluated model using accuracy, precision, and recall
+## Best Model:
 
-## Results:
+Random Forest Classifier
 
-* Accuracy: ~79%
-* Precision: ~75%
-* Recall: ~87%
+## Final Results:
+
+* Accuracy: ~98.5%
+* Precision: 100%
+* Recall: ~97%
 
 ## Key Learnings:
 
-* Difference between regression and classification
-* Logistic Regression fundamentals
-* Importance of evaluation metrics (precision, recall)
-* Handling real-world datasets
-
-## Future Improvements:
-
-* Try Random Forest / other models
-* Reduce false negatives (important in medical context)
-<img width="640" height="480" alt="Figure_1" src="https://github.com/user-attachments/assets/19c44041-7962-45ba-8951-976c6b951a8a" />
+* Accuracy alone is not enough
+* Precision and Recall matter in healthcare
+* Model comparison is critical
+* Random Forest handled complex medical data better
