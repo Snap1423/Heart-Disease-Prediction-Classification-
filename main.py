@@ -54,9 +54,7 @@ plt.show()
 corr = data.corr()
 plt.figure(figsize=(10,8))
 sns.heatmap(corr, annot=True,cmap="coolwarm")
-
 plt.show()
-
 
 #Creating a new dataset with only strong feature
 selected_features = ["cp", "thalach", "exang", "oldpeak", "slope", "ca", "thal"]
@@ -76,20 +74,20 @@ X_test = scaler.transform(X_test)
 model = LogisticRegression(max_iter=1000, C=0.5)
 model.fit(X_train, y_train)
 
-#prediction
+#Prediction
 predictions = model.predict(X_test)
 
-# confused matrix 
+# Confused matrix 
 cm = confusion_matrix(y_test,predictions)
 print(cm)
 
-# precision and Recall
+# Precision and Recall
 print("Improved Logistic Regression score")
 print("Accuracy: ", accuracy_score(y_test,predictions)) 
 print("Precision: ", precision_score(y_test, predictions))
 print("Recall: ", recall_score(y_test, predictions))
 
-#graph
+#Graph
 sns.heatmap(cm, annot=True, fmt="d", cmap="Blues",
             xticklabels=["No Disease", "Disease"],
             yticklabels=["No Disease", "Disease"])
@@ -98,14 +96,14 @@ plt.ylabel("New Actual")
 plt.title("New Confusion Matrix")
 plt.show()
 
-# comparison for random forest classifier
+# Comparison for random forest classifier
 rf_model = RandomForestClassifier(random_state=42)
 rf_model.fit(X_train, y_train)
 
-# prediction
+# Prediction
 rf_predictions = rf_model.predict(X_test)
 
-# evaluate
+# Evaluate 
 print("Comparison model of RandomForestClassifer") 
 print("Accuracy: ", accuracy_score(y_test, rf_predictions))
 print("Precision: ", precision_score(y_test, rf_predictions))
