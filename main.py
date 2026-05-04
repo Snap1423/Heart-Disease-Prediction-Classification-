@@ -1,3 +1,4 @@
+# Importing the Libraries 
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
@@ -51,6 +52,7 @@ plt.ylabel("Actual")
 plt.title("Confusion Matrix")
 plt.show()
 
+#Correlation 
 corr = data.corr()
 plt.figure(figsize=(10,8))
 sns.heatmap(corr, annot=True,cmap="coolwarm")
