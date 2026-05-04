@@ -23,3 +23,12 @@ Random Forest Classifier
 * Precision and Recall matter in healthcare
 * Model comparison is critical
 * Random Forest handled complex medical data better
+
+
+![alt text](<Screenshot 2026-05-04 172643.png>)
+
+
+![alt text](<Screenshot 2026-05-04 172631.png>)
+
+
+![alt text](image.png)
