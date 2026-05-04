@@ -15,7 +15,7 @@ Random Forest Classifier
 
 * Accuracy: ~98.5%
 * Precision: 100%
-* Recall: ~97%
+* Recall: ~97% 
 
 ## Key Learnings:
 
