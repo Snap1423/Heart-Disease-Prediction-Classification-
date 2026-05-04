@@ -96,7 +96,7 @@ plt.ylabel("New Actual")
 plt.title("New Confusion Matrix")
 plt.show()
 
-# Comparison for random forest classifier
+# Comparison: random forest classifier
 rf_model = RandomForestClassifier(random_state=42)
 rf_model.fit(X_train, y_train)
 
@@ -104,7 +104,7 @@ rf_model.fit(X_train, y_train)
 rf_predictions = rf_model.predict(X_test)
 
 # Evaluate 
-print("Comparison model of RandomForestClassifer") 
+print("Comparison: RandomForestClassifer") 
 print("Accuracy: ", accuracy_score(y_test, rf_predictions))
 print("Precision: ", precision_score(y_test, rf_predictions))
 print("Recall: ", recall_score(y_test, rf_predictions))
